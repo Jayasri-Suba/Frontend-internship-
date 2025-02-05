@@ -1,0 +1,151 @@
+body
+{
+font-family: 'Arial', sans-serif;
+margin: 0;
+padding: 0;
+background-color: gray;
+text-align: center;
+}
+
+header
+{
+background-color: blue;
+color: white;
+padding: 20px;
+}
+
+.bucket-list
+{
+list-style: none;
+padding: 0;
+max-width: 400px;
+margin: 20px auto;
+}
+
+.bucket-list li
+{
+background: DeepSkyBlue;
+padding: 15px;
+margin: 10px;
+border-radius: 5px;
+font-size: 18px;
+display: flex;
+align-items: center;
+justify-content: start;
+box-shadow: 0 2px 5px rgba(0, 255, 255, 1);
+transistion: transform0.3s ease-in-out;
+}
+
+.bucket-list li: hover
+{
+transform: scale(1.05);
+}
+
+.bucket-list li i
+{
+margin-right: 10px;
+color: Black;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .bucket-list {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+li:hover {
+    background-color: Teal;
+    cursor: pointer;
+}
+
+li.completed:hover {
+    background-color: green;
+    color: silver;
+}
+header {
+    background-color: thistle;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+li.completed {
+    text-decoration: line-through;
+    color: midnightblue;
+}
+
+li .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+}
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+}
+
+/* Bucket List section styling */
+.bucket-list {
+    background: ivory;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: DarkBlue;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding-left: 25px;
+    position: relative;
+}
